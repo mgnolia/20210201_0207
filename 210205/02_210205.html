@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <style>
+        #pp{
+            display: block;
+        }
+    </style>
+    
+</head>
+<body>
+    <p id="pp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima magni delectus, officia nisi dicta magnam est? Ullam provident ex deleniti sint, laboriosam minima commodi facilis nobis unde fuga molestiae nulla.</p>
+    <p id="pp1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima magni delectus, officia nisi dicta magnam est? Ullam provident ex deleniti sint, laboriosam minima commodi facilis nobis unde fuga molestiae nulla.</p>
+    <button id="pbtn1">javascript_button</button>
+    <button id="pbtn2">jquery_button</button>
+<javascriptbutton/bodyjquerybutton2
+</body>
+</html>
+<script>
+    document.getElementById("pbtn1").onclick = function(){
+        // alert("push");
+        if(document.getElementById("pp").style.display =="none")
+            (document.getElementById("pp").style.display = "block"); 
+        else
+        document.getElementById("pp").style.display = "none"
+    }
+</script>
+<script>
+    $("#pbtn2").click(function(){
+        $("#pp").toggle(2500, function(){
+            $("#pp1").toggle(2500, function(){ 
+                alert("끝났음") } );
+             
+        }
+        );
+    })
+</script>
